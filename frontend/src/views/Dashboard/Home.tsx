@@ -19,10 +19,10 @@ const Home = () => {
 			</div>
 			<div className="rounded-md p-8 shadow-sm">
 				<div className="flex justify-between items-center">
-					<div className="flex gap-4 border-b">
-						<p onClick={() => setActive("doctors")} className="border-b border-b-[#061F6A] pb-4">Doctors Table</p>
-						<p onClick={() => setActive("nurses")} className="border-b border-b-[#061F6A] pb-4">Nurse Table</p>
-						<p onClick={() => setActive("medical")} className="border-b border-b-[#061F6A] pb-4">Medical Lab Table</p>
+					<div className="flex gap-4 border-b cursor-pointer">
+						<p onClick={() => setActive("doctors")} className={`${active === "doctors" ? "border-b border-b-[#061F6A] " : ""} pb-4`}>Doctors Table</p>
+						<p onClick={() => setActive("nurses")} className={`${active === "nurses" ? "border-b border-b-[#061F6A] " : ""} pb-4`}>Nurse Table</p>
+						<p onClick={() => setActive("medical")} className={`${active === "medical" ? "border-b border-b-[#061F6A] " : ""} pb-4`}>Medical Lab Table</p>
 					</div>
 						<button>View all</button>	
 				</div>
