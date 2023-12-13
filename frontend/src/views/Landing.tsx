@@ -7,6 +7,8 @@ import { FaHospital } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
 import HomeList from "../components/Dashboard/Landing/HomeList";
 import Footer from "../components/Dashboard/Landing/Footer";
+import imageHeart from "../assets/image_heart.png"
+import Hands from "../assets/hands.png"
 
 const HomePage = () => {
 	return (
@@ -91,18 +93,18 @@ const HomePage = () => {
 						</p>
 						<div className="rounded-md bg-[#1C3530] text-white p-6">
 							<h1 className="pb-2 uppercase ">Categories</h1>
-							<ul className="flex flex-col divide-y gap-y-2">
+							<ul className="flex flex-col divide-y gap-y-4 mt-4 ">
 								<li>Decentralized Health Records</li>
-								<li>Medical Assistive AI</li>
-								<li>Medical Assistive Robots</li>
+								<li className="pt-4">Medical Assistive AI</li>
+								<li className="pt-4">Medical Assistive Robots</li>
 							</ul>
 						</div>
 					</div>
-					<div className="p-8 flex flex-col gap-y-4 bg-[#E2EAE9] w-full flex-[0.4]">
-						<img src="" className="rounded-md" alt="" />
-						<h1>Decentralized Health Records</h1>
+					<div className="p-8 flex flex-col gap-y-4 bg-[#E2EAE9] rounded-lg w-full flex-[0.4]">
+						<img src={imageHeart} className="rounded-md" alt="" />
+						<h1 className="font-semibold text-2xl">Decentralised Health Records</h1>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-							accusamus aliquam aut. Laboriosam, ex? Nihil nam recusandae at. Quo ipsum vero nulla odit temporibus ullam? Officiis laboriosam hic obcaecati iure!
+							accusamus aliquam aut. Laboriosam, 
 						</p>
 						<button className="text-white bg-[#1E1E1E] w-fit rounded-full py-2 px-4 ml-auto">
 							Learn More
@@ -122,14 +124,14 @@ const HomePage = () => {
 							Whether you are a medical practitioner or a patient, AdAstra has something in stall for you
 						</p>
 					</div>
-					<div className="">
-						<div className="flex flex-col gap-y-4">
+					<div className="flex justify-between">
+						<div className="flex flex-col gap-y-4 max-w-[550px]">
 							<HomeList />
 							<HomeList />
 							<HomeList />
 							<HomeList />
 						</div>
-						<img src="" className="rounded-md" alt="" />
+						<img src={Hands} className="rounded-md bg-contain" alt="" />
 
 					</div>
 				</div>

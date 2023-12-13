@@ -4,10 +4,10 @@ import DoctorTable from "../../components/Dashboard/Home/Tables/Doctors";
 const Home = () => {
 	return (
 		<div className="flex flex-col gap-y-8">
-			<div className="bg-[#F1F5F9] rounded-md py-8 px-8">
-				<p>Welcome back</p>
+			<div className="bg-[#F1F5F9] gap-y-4 flex flex-col rounded-md py-8 px-8">
+				<p className="text-[14px] italic">Welcome back,</p>
 				<h1 className="font-bold">Scott Eyawo</h1>
-				<p>Pick up from where you started</p>
+				<p className="text-[14px] italic">Pick up from where you started</p>
 			</div>
 			<div className="flex justify-between gap-8 ">
 				<InfoCard/>
