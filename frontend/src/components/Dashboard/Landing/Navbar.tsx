@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Logo from "../../../assets/Logo_black.png"
 const Navbar = () => {
 	return (
 		<div className='flex items-center justify-between px-12 py-4'>
 			<div className=''>
-				<img alt="Logo" src='./logo.png' className='w-fit' />
+				<img alt="Logo" src={Logo} className='w-fit' />
 			</div>
 			<div>
 				<ul className='flex gap-4'>

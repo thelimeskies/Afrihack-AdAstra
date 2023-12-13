@@ -49,7 +49,7 @@ export const FormInput = ({
 						className={`${
 							additionalClasses
 								? additionalClasses + " w-full"
-								: "h-10 w-full rounded-md border border-[#001746] bg-transparent px-4 py-2 text-[15px] font-light  outline-none md:placeholder-white md:placeholder-opacity-50 "
+								: "h-10 w-full rounded-md border border-[#001746] bg-transparent px-4 py-2 text-[15px] font-light  outline-none "
 						}`}
 						type={!visible ? type : "text"}
 						required={required}

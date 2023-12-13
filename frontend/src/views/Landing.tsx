@@ -1,5 +1,6 @@
 import { LuHome } from "react-icons/lu";
 import Navbar from "../components/Dashboard/Landing/Navbar";
+import DoctorImage from "../assets/doctor.png"
 import { FormInput } from "../components/FormInput";
 import { Gender } from "../utils/Constants";
 import { FaHospital } from "react-icons/fa6";
@@ -12,36 +13,34 @@ const HomePage = () => {
 		<>
 			<Navbar />
 			<div className="px-20 py-20 flex flex-col gap-y-12">
-				<div className="flex flex-col gap-y-12">
-					<div>
+				<div className="flex ">
+					<div className="w-[60%] flex flex-col gap-y-6">
 						<span className="flex gap-2 items-center w-fit bg-[#F1F5F9] px-4 py-2 rounded-full">
 							<LuHome />
 							<p>What we plan to achieve</p>
 						</span>
-						<h1>Creating a Decentralized Health Records System and Incoporating Access Control with Role-Based Permissions</h1>
-						<div>
-							<button className="text-white bg-[#1E1E1E] py-2 px-4">
+						<h1 className="text-4xl">Creating a Decentralized Health Records System and Incoporating Access Control with Role-Based Permissions</h1>
+						<div className="flex gap-4">
+							<button className="rounded-full text-white bg-[#1E1E1E] py-2 px-4">
 								Get Started
 							</button>
-							<button className="text-[#1E1E1E] px-4 py-2">
+							<button className="rounded-full border  text-[#1E1E1E] px-4 py-2">
 								Learn More
 							</button>
 						</div>
 					</div>
-					<div>
-						<img src="" alt="" />
+					<div className="w-[40%]">
+						<img src={DoctorImage} alt="doctors_image" />
 					</div>
 
 				</div>
 				{/* book appointment  */}
 				<div className="flex gap-4 mx-8 items-center bg-[#F8FAFC] py-4 px-4 rounded-md">
 					<FormInput
-						select={true}
-						options={Gender}
 						name="gender"
 						id="gender"
 						type="text"
-						placeholder="Gender"
+						placeholder="Enter your name"
 						autoComplete={"false"}
 						required={true}
 						onChange={(selectedOption) => {
@@ -54,7 +53,7 @@ const HomePage = () => {
 						name="gender"
 						id="gender"
 						type="text"
-						placeholder="Gender"
+						placeholder="Select your location"
 						autoComplete={"false"}
 						required={true}
 						onChange={(selectedOption) => {
@@ -67,7 +66,7 @@ const HomePage = () => {
 						name="gender"
 						id="gender"
 						type="text"
-						placeholder="Gender"
+						placeholder="Select your gender"
 						autoComplete={"false"}
 						required={true}
 						onChange={(selectedOption) => {
