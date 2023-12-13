@@ -46,16 +46,16 @@ const DoctorTable = () => {
 		<>
 			<table className="w-full">
 				<thead>
-					<tr className="bg-[#0C0C0C] font-normal text-white py-4 rounded-tl-md">
+					<tr className="bg-[#0C0C0C] text-[14px] font-normal text-white py-4 rounded-tl-md">
 						<th className="py-2">Date Created</th>
-						<th>Patient ID</th>
-						<th>Patient Home</th>
+						<th>Doctors ID</th>
+						<th>Doctors Name</th>
 						<th>Phone Number</th>
 						<th>Height (cm)</th>
 						<th>Weight (kg)</th>
 					</tr>
 				</thead>
-				<tbody className="text-center">
+				<tbody className="text-center text-[14px]">
 					{
 						tableData.map((data) => {
 							return(

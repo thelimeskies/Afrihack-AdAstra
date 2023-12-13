@@ -1,4 +1,4 @@
-import { BsChevronBarDown } from "react-icons/bs"
+import { BsChevronDown } from "react-icons/bs"
 
 const Topbar = () => {
 	return (
@@ -6,18 +6,18 @@ const Topbar = () => {
 			<div>
 				<p>Hello</p>
 			</div>
-			<div className="flex items-center">
-				<span className="w-6 h-6 rounded-full bg-blue-950">
+			<div className="flex items-center gap-2">
+				<span className="w-[49px] h-[49px] rounded-full bg-blue-950">
 
 				</span>
 				<div className="flex flex-col">
-					<p>
+					<p className="text-[14px]">
 						Scott Eyawo (Nurse)
 					</p>
-					<p>Scott.Eyawo@hospital.com</p>
+					<p className="text-[12px]">Scott.Eyawo@hospital.com</p>
 				</div>
-				<button>
-					<BsChevronBarDown />
+				<button className="font-bold">
+					<BsChevronDown/>
 				</button>
 
 			</div>

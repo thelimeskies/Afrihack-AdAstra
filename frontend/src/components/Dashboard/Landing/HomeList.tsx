@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+import {  BsArrowRight } from 'react-icons/bs';
 
 const HomeList = () => {
 	return (
